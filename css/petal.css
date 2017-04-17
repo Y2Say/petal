@@ -297,6 +297,12 @@ ul{
  	height:120px;
  	border:0;
  }
+ .recommend-box .content-link:hover{
+		opacity: .9;
+ }
+ .recommend-box .content-link .recommend-infobox:hover{
+		opacity: 0.8;
+ }
  .recommend-imgbox .avt-bg{
  	position: absolute;
  	top: 0;
@@ -353,12 +359,28 @@ ul{
  	border-bottom: 1px solid #ededed;
  	background: url(../img/box_title_sprite.svg) -140px 0 no-repeat;
  }
+ .recommend-decoratebox{
+ 	display: block;
+ 	height:300px;
+ 	width:100%;
+ 	text-align: center;
+ 	background: #f5f5f5;
+ }
+ .recommend-decoratebox .decorate{
+		font-size: 16px;
+ }
+ .recommend-homebox{
+ 	display: block;
+ 	position: absolute;
+    padding: 0 20px 5px 0;
+    width: 80px;
+    height: 25px;
+    border-bottom: 1px solid #ededed;
+    background: url(../img/box_title_sprite.svg) -140px 0 no-repeat;
+ }
+
  .recommend-imgbox a img{
 	width: 100%;
-	height: 300px;
- }
- .recommend-infobox.decoratebox{
-	width:19%;
 	height: 300px;
  }
  .recommend-imgbox{
@@ -368,7 +390,7 @@ ul{
  	display: block;
 	font-size: 16px;
  }
- .recommend-infobox span{
+ .recommend-infobox span,.recommend-decoratebox span{
  	font-size: 12px;
  	color: #999;
  	line-height: 20px;
