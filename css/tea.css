@@ -1,12 +1,20 @@
 *{
-	margin: 0;
-	padding: 0;
+	margin:0;
+	padding:0;
 }
 body{
 	font-family: "helvetica neue",arial,sans-serif;
     font-size: 14px;
     color: #444;
 }
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td {
+    margin: 0;
+    padding: 0
+}
+div{
+    display: block;
+}
+/*header*/
 .header{
 	width: 100%;
 	height:200px;
@@ -182,9 +190,106 @@ a{
  	color: white;
  }
  .account-link{
- 	width:1000;
+ 	width:264;
+ 	height:120px;
  	float: right;
+ 	position: relative;
  }
- .account-link{
+ .account-link a{
+	display: inline-block;
+    width: 54px;
+    height: 54px;
+    background: url(../img/icons_login_big.svg) 0 0 no-repeat;
+    
+ }
+ .account-link .blog{
+ 	background-position: 0 0;
+ 	margin:20px 12px 0 0;
+ }
+ .account-link .qzone{
+	background-position: -80px 0;
+	margin:20px 12px 0 0;
+ }
+ .account-link .douban{
+ 	background-position: -160px 0;
+ 	margin:20px 12px 0 0;
+ }
+ .account-link .renren{
+ 	background-position: -240px 0;
+ }
+ .account-link .with-line{
+ 	text-align: center;
+ 	margin-top: 10px;
+ 	color: white;
+ }
+ .account-link .with-line:before{
+ 	content: "";
+    border-top: 1px solid #ededed;
+    display: block;
+    position: absolute;
+    width: 40px;
+    top: 97px;
+    left: 0;
+ }
+ .account-link .with-line:after{
+ 	content: "";
+    border-top: 1px solid #ededed;
+    display: block;
+    position: absolute;
+    width: 40px;
+    top: 97px;
+    right: 0;
+ }
+ /*main*/
+ .main-wrapper{
+ 	position: relative;
+    margin: 0 auto;
+    border: 0;
+ }
+ .author-info{
+ 	background: #FFF;
+    position: relative;
+    box-shadow: 0 0 4px rgba(0,0,0,.2);
+    margin: 17px 0;
+ }
+ .info-inner{
+ 	padding: 20px 20px 15px;
+    position: relative;
+ }
+ .info-title{
+ 	margin-bottom: 20px;
+ }
+.board-name{
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #444;
+    text-shadow: none;
+    display: inline-block;
+}
+ .board-category{
+ 	display: inline-block;
+    padding-left: 15px;
+    margin-left: 15px;
+    border-left: 1px solid #DDD;
+    color: #999;
+ }
 
+ .brown-link{
+ 	color: #9E7E6B;
  }
+/* .action-buttons{
+ 	float:right;
+ 	width:496px;
+ }*/
+ /*
+ .board-description{
+ 	position: relative;
+ 	width:100%;
+ 	height:50px;
+ 	
+ 	border:1px solid red;
+ 	text-align: left;
+ }*/
